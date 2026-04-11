@@ -26,7 +26,7 @@ body {
 }
 
 .navbar .bi:hover {
-    color: #ff0000; /* Color rojo Phantom al pasar el mouse */
+    color: #ff0000;
 }
 
 /* Estilo para los campos del Modal de Login */
@@ -47,7 +47,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #ff0000 !important; /* Rojo Phantom al pasar el mouse */
+    color: #ff0000 !important;
 }
 
 footer .bi-facebook:hover { color: #1877f2 !important; }
