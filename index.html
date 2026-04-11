@@ -10,20 +10,31 @@
 <body>
     <div class="modal fade" id="promoModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-0">
-                <p class="mb-1 text-muted">¡Nuevo Lanzamiento en Phantom!</p>
-                <img src="Imagenes\popup.jpg" class="img-fluid" alt="Promo">
-                <p class="text-secondary mb-4">Paw Patrol: Championship ya está disponible. ¡No te quedes sin el tuyo!</p>
+        <div class="modal-content border-0 shadow-lg rounded-4">
+    <div class="d-flex justify-content-end p-3">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
 
-                <button type="button" class="btn btn-danger rounded-pill px-5 py-2 fw-bold" data-bs-dismiss="modal">
-                        Cerrar
-                    </button>
-            </div>
+    <div class="modal-body text-center p-4 pt-0">
+        
+        <p class="text-secondary small text-uppercase fw-semibold mb-3" style="letter-spacing: 1px;">
+            ¡Nuevo Lanzamiento en Phantom!
+        </p>
+        
+        <div class="d-flex justify-content-center mb-4">
+            <img src="Imagenes/popup.jpg" class="img-fluid rounded-3 shadow-sm" style="max-height: 400px;" alt="Promo">
         </div>
+        
+        <p class="fs-5 px-3 mb-4" style="font-weight: 400; line-height: 1.4;">
+            Paw Patrol: Championship ya está disponible. <br>
+            <strong>¡No te quedes sin el tuyo!</strong>
+        </p>
+
+        <button type="button" class="btn btn-danger rounded-pill px-5 py-2 fw-bold shadow-sm" data-bs-dismiss="modal">
+            Cerrar
+        </button>
+    </div>
+</div>
     </div>
 </div>
 
