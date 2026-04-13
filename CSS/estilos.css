@@ -19,9 +19,6 @@ body {
     cursor: pointer;
     display: block; 
 }
-
-
-
 /* Color de iconos en el header */
 .navbar .bi {
     transition: color 0.3s ease;
