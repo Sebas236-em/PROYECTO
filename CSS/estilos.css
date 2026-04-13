@@ -1,5 +1,5 @@
+/* ===== CAROUSEL ===== */
 .carousel-item {
-    /* Crea un degradado que nace del centro hacia los lados */
     background: radial-gradient(circle, #1a0b3d 0%, #000000 100%);
 }
 
@@ -9,17 +9,20 @@
     object-fit: contain;
     background-color: transparent;
 }
-/* Fuente estilo gaming */
+
+.carousel-item a {
+    cursor: pointer;
+    display: block;
+}
+
+/* ===== BODY ===== */
 body {
     background-color: #fff;
     color: #000000;
     font-family: 'Segoe UI', Roboto, sans-serif;
 }
-.carousel-item a {
-    cursor: pointer;
-    display: block; 
-}
-/* Color de iconos en el header */
+
+/* ===== NAVBAR ===== */
 .navbar .bi {
     transition: color 0.3s ease;
     color: #fff;
@@ -29,12 +32,12 @@ body {
     color: #ff0000;
 }
 
-/* Estilo para los campos del Modal de Login */
+/* ===== MODAL ===== */
 .modal-content input::placeholder {
     color: #ccc;
-}   
+}
 
-/* Efecto imagen nosotros */
+/* ===== NOSOTROS ===== */
 #nosotros img {
     transition: transform 0.5s ease;
 }
@@ -42,6 +45,8 @@ body {
 #nosotros img:hover {
     transform: scale(1.02);
 }
+
+/* ===== FOOTER ===== */
 footer a {
     transition: 0.3s;
 }
@@ -53,3 +58,11 @@ footer a:hover {
 footer .bi-facebook:hover { color: #1877f2 !important; }
 footer .bi-instagram:hover { color: #e4405f !important; }
 footer .bi-tiktok:hover { color: #00f2ea !important; }
+
+/* ===== PROMOCIONES ===== */
+.img-promo {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    border-radius: 15px;
+}
