@@ -1,126 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/estilos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>Phantom | Tienda de Videojuegos</title>
+  <meta charset="UTF-8">
+  <title>Productos Destacados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+
 </head>
-<body class="d-flex flex-column min-vh-100"> <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-3" href="index.html" style="letter-spacing: 3px;">PHANTOM</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link px-4 fs-6" href="#">Videojuegos</a></li>
-                    <li class="nav-item"><a class="nav-link px-4 fs-6" href="promo.html">Consolas</a></li>
-                    <li class="nav-item"><a class="nav-link px-4 fs-6" href="#">Coleccionables</a></li>
-                    <li class="nav-item"><a class="nav-link px-4 fs-6" href="#">Novedades</a></li>
-                </ul>
-                <form class="d-flex me-3" role="search">
-                    <input class="form-control me-2 py-2" type="search" placeholder="Buscar..." style="background: #fff; border: 1px solid #444; color: #000;">
-                    <button class="btn btn-outline-success px-4" type="submit">Buscar</button>
-                </form>
-                <div class="d-flex align-items-center mt-3 mt-lg-0">
-                    <a href="#" class="text-white me-3 fs-4" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="bi bi-person-circle"></i></a>
-                    <a href="#" class="text-white fs-4 position-relative">
-                        <i class="bi bi-cart3"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">0</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
 
-    <main class="flex-grow-1"> <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <a href="#"><img src="Imagenes/Baner.jpg" class="d-block w-100" alt="Banner 1"></a>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <a href="#"><img src="Imagenes/Baner2.jpg" class="d-block w-100" alt="Banner 2"></a>
-                </div>
-                <div class="carousel-item">
-                    <a href="#"><img src="Imagenes/baner3.jpg" class="d-block w-100" alt="Banner 3"></a>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
+<body>
 
-        </main>
+<div class="container py-5">
 
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bg-dark text-white border-secondary">
-                <div class="modal-header border-secondary">
-                    <h5 class="modal-title">INICIAR SESIÓN</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body p-4">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control bg-secondary text-white border-0">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Contraseña</label>
-                            <input type="password" class="form-control bg-secondary text-white border-0">
-                        </div>
-                        <button type="submit" class="btn btn-danger w-100 fw-bold">INGRESAR</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+ <!-- Título -->
+  <h2 class="section-title">Productos Destacados</h2>
+  <div class="underline"></div>
+
+ <!-- grid-->
+  <div class="row g-4">
+
+<!-- Productos -->
+    
+<div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/audifono1.jpg" class="product-img" alt="">
+        <div class="brand">Audio</div>
+        <div class="product-title">Logitech G321 Lightspeed Audífonos - Negro</div>
+        <div class="new-price">S/ 279.90</div>  
+       <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
     </div>
 
-    <footer class="bg-dark text-white pt-5 pb-4 border-top border-secondary">
-        <div class="container text-center text-md-start">
-            <div class="row">
-                <div class="col-md-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-danger">Phantom</h5>
-                    <p class="small text-secondary">Líderes en gaming en Perú. Pasión por la tecnología.</p>
-                    <div class="mt-4">
-                        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-tiktok"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h5 class="text-uppercase mb-4 fw-bold fs-6">Categorías</h5>
-                        <p><a href="#" class="text-secondary text-decoration-none small">Videojuegos</a></p>
-                        <p><a href="#" class="text-secondary text-decoration-none small">Consolas</a></p>
-                        <p><a href="#" class="text-secondary text-decoration-none small">Coleccionables</a></p>
-                        <p><a href="#" class="text-secondary text-decoration-none small">Accesorios</a></p>
-                      </div>
+    <div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/audifono2.jpg" class="product-img" alt="">
+        <div class="brand">Audio</div>
+        <div class="product-title">Logitech G325 Audífonos Inalámbricos LIGHTSPEED - Lila </div>
+        <div class="new-price">S/ 399.00</div>
+        <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
 
-                      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h5 class="text-uppercase mb-4 fw-bold fs-6">Nosotros</h5>
-                        <p><a href="nosotros.html" class="text-secondary text-decoration-none small">Quiénes somos</a></p>
-                        <p><a href="#" class="text-secondary text-decoration-none small">Tiendas</a></p>
-                        <p><a href="#" class="text-secondary text-decoration-none small">Términos y Condiciones</a></p>
-                        <p><a href="#" class="text-secondary text-decoration-none small">Libro de Reclamaciones</a></p>
-                      </div>
+    <div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/audifono3.jpg" class="product-img" alt="">
+        <div class="brand">Audio</div>
+        <div class="product-title">Logitech G325 Audífonos Inalámbricos LIGHTSPEED - Blanco </div>
+        <div class="new-price">S/ 399.90</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
 
-                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-secondary">
-                        <h5 class="text-uppercase mb-4 fw-bold fs-6">Contacto</h5>
-                        <p class="small"><i class="bi bi-house-fill me-2"></i> Lima, Perú</p>
-                        <p class="small"><i class="bi bi-envelope-fill me-2"></i> soporte@phantom.pe</p>
-                        <p class="small"><i class="bi bi-telephone-fill me-2"></i> +51 999 888 777</p>
-                      </div>
-                    </div>
-            </div>
-        </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/teclado1.jpg" class="product-img" alt="">
+        <div class="brand">Teclados</div>
+        <div class="product-title">Redragon Ucal Pro K673 Teclado Inalámbrico Switch Rojo - Negro </div>
+        <div class="new-price">S/ 329.00</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
+    
+
+    <div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/teclado2.jpg" class="product-img" alt="">
+        <div class="brand">Teclados</div>
+        <div class="product-title">Royal Kludge RK-R87PRO Tecaldo Mecánico TKL Phantom - Creamy </div>
+        <div class="new-price">S/ 299.00</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/teclado3.jpg" class="product-img" alt="">
+        <div class="brand">Teclados</div>
+        <div class="product-title">Royal Kludge RK X87 Teclado BLACK NIGHT Creamy Switch </div>
+        <div class="new-price">S/ 229.90</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
+
+
+    <div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/teclado4.jpg" class="product-img" alt="">
+        <div class="brand">Teclados</div>
+        <div class="product-title">Royal Kludge RK X87 Teclado Blackberry Mouse Creamy Switch </div>
+        <div class="new-price">S/ 229.90</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/mouse1.jpg" class="product-img" alt="">
+        <div class="brand">Mouse</div>
+        <div class="product-title">Logitech G Pro X Superlight 2 SE Mouse Inalámbrico - Blanco </div>
+        <div class="new-price">S/ 539.00</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
+
+
+    <div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/mouse2.jpg" class="product-img" alt="">
+        <div class="brand">Mouse</div>
+        <div class="product-title">Logitech G Pro X Superlight 2 SE Mouse Inalámbrico - Negro</div>
+        <div class="new-price">S/ 539.90</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
+    
+
+
+    <div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/mouse3.jpg" class="product-img" alt="">
+        <div class="brand">Mouse</div>
+        <div class="product-title">Razer Deathadder V4 Pro Mouse - Blanco </div>
+        <div class="new-price">S/ 779.00</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
+
+
+
+     <div class="col-md-3">
+      <div class="product-card">
+        <span class="discount-badge">-20%</span>
+        <img src="imagenes/silla1.jpg" class="product-img" alt="">
+        <div class="brand">Sillas Gamer</div>
+        <div class="product-title">Silla Gamer Razer Iskur V2 X Light - Gray Fabric</div>
+        <div class="old-price">S/ 1399.90</div>
+        <div class="new-price">S/ 1249.90</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
+
+
+    <div class="col-md-3">
+      <div class="product-card">
+        <img src="imagenes/silla2.jpg" class="product-img" alt="">
+        <div class="brand">Sillas Gamer</div>
+        <div class="product-title">Silla Gamer ThunderX3 Core Smart Modern - Negro</div>
+        <div class="new-price">S/ 1299.90</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="product-card">
+        <span class="discount-badge">-20%</span>
+        <img src="imagenes/silla3.jpg" class="product-img" alt="">
+        <div class="brand">Sillas Gamer</div>
+        <div class="product-title">Silla Gamer Razer Iskur V2 X - Negro/Verde</div>
+        <div class="old-price">S/ 1399.90</div>
+        <div class="new-price">S/ 1249.90</div>
+         <a href="producto.html?id=1" class="stretched-link"></a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<script src="js/app.js"></script>
 </body>
 </html>
