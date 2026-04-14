@@ -51,8 +51,8 @@ footer a {
     transition: 0.3s;
 }
 
-footer a:hover {
-    color: #ff0000 !important;
+footer button:hover {
+    transform: scale(1.1);
 }
 
 footer .bi-facebook:hover { color: #1877f2 !important; }
